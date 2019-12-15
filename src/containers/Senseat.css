@@ -1,0 +1,145 @@
+.fauteuil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(0.8); */
+}
+
+.senseatTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -30vw 200px 0;
+    -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.fauteuil h2{
+    font-size: 10vw;
+    font-weight: 600;
+    margin: 0;
+}
+
+.fauteuil p{
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 0 10px 0 0;
+    color:  rgb(255, 255, 255);
+}
+
+.byLogo{
+    display: flex;
+    align-items: center;
+    margin-right: -15vw;
+}
+
+.byLogo img{
+    width: 12vw;
+}
+
+.senseatImg {
+    width: 50%;
+    -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@media screen and (max-width: 500px) {
+    .fauteuil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .senseatTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0;
+        -webkit-animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    .fauteuil h2{
+        font-size: 12vw;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .byLogo{
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .senseatImg {
+        width: 90%;
+        margin: 0;
+        -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+  }
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
