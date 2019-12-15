@@ -1,0 +1,109 @@
+.eventContainer {
+    width: 30vw;
+    margin: -13vw 0 0 19vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.eventContainer p{
+    color: white;
+    font-size: 1vw;
+    text-align: justify;
+    line-height: 2;
+}
+
+.eventContainer button {
+	background-color:#3D84B3;
+    border-radius:2px;
+    border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+    font-size:1vw;
+    font-weight: 600;
+    padding:16px 16px;
+    margin-top: 12px;
+    height: 50px;
+    width: 40%;
+	text-decoration:none;
+}
+.eventContainer button:hover {
+	background-color:rgb(44, 94, 128);
+}
+.eventContainer button:active {
+	position:relative;
+	top:1px;
+}
+
+@media screen and (max-width: 900px) {
+    .eventContainer {
+        width: 30vw;
+        margin: -22vw 0 0 19vw;
+    }
+
+    .eventContainer p{
+        color: white;
+        font-size: 1.5vw;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .eventContainer button {
+        font-size:1.5vw;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .eventContainer {
+        width: 70vw;
+        margin: 0;
+    }
+
+    .eventContainer p{
+        color: white;
+        font-size: 3vw;
+        text-align: justify;
+        line-height: 2;
+    }
+
+    .eventContainer button {
+        font-size:3vw;
+        width: 60%;
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
